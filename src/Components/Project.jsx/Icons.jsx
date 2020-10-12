@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme)=> ({
             margin: "0 50px 15px 55px",
           },
         [theme.breakpoints.up("lg")]: {
-            margin: "0 60px 20px 60px",
+            margin: "0 75px 8px 65px",
           },
       },
       icon:{

@@ -66,14 +66,25 @@ const useStyles = makeStyles((theme)=> ({
     schools:{
       margin: "5px auto",
     },
-    hover:{
+    hover1:{     
+      height: "5%",
+      width: "5%",
+      margin: "25px 0px 25px 330px",
+      [theme.breakpoints.down("sm")]: {
+        height: "8%",
+        width: "8%",
+        lineHeight: "2.0",
+        margin: "18px 0px 0px 160px",
+      },
+    },
+    hover2:{     
       height: "5%",
       width: "5%",
       margin: "25px 0px 25px 330px",
       [theme.breakpoints.down("sm")]: {
         height: "10%",
         width: "10%",
-        margin: "5px 0px 25px 160px",
+        margin: "0px 0px 0px 160px",
       },
     },    
 }));
@@ -96,12 +107,15 @@ function Education(){
                   title="Contemplative Reptile"
                   />
                   <div className="cardText">
+                    <div>
                     <h3 className={classes.schools}>Eleven Fifty Academy / 2020</h3>
                     <h4 className={classes.schools}>・Web Development Course, Front end engineer</h4>
 
                     <h3 className={classes.schools}>Shinshu University / 1998</h3>
                     <h4 className={classes.schools}>・Bachelor's degree, Agriculture</h4>
                     <h4 className={classes.schools}>・Agriculture Operations and Related Sciences</h4>
+                    
+                    </div>
                     <div className="mask">
                       <div className="cardTextJp">
                       <h3 className={classes.schools}>Eleven Fifty Academy / 2020</h3>
@@ -109,11 +123,13 @@ function Education(){
                       <h4 className={classes.schools}>・フロントエンジニア</h4>
                       <h3 className={classes.schools}>信州大学 / 1998</h3>
                       <h4 className={classes.schools}>・農学部</h4>
-                      <h4 className={classes.schools}>・生物生産科学科</h4>
+                      <h4 className={classes.schools}>・生物生産科学科</h4><p><img src={HoverIcon} className={classes.hover1} alt="#"/></p>
                       </div>
+                      
                     </div>
-                    <p><img src={HoverIcon} className={classes.hover} alt="#"/></p>
+                    <p><img src={HoverIcon} className={classes.hover2} alt="#"/></p>
                   </div>
+                  
                 </CardContent>
               </CardActions>  
               </CardActionArea>
